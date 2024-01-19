@@ -1,11 +1,13 @@
 import java.util.*;
-public class task3 {
+public class task3{
     // ATM interface
-   static double balance=3000.0;
+   static double balance;
        public static void main(String args[]){
+        user_detail ob=new user_detail();
+        balance=ob.details();
         Scanner sc = new Scanner(System.in);
         while(true){
-        System.out.println("----------WELCOME TO ATM---------- ");
+        System.out.println("-----3-----WELCOME TO ATM---------- ");
         System.out.println("PRESS 1 TO WITHDRAW AMOUNT");
         System.out.println("PRESS 2 TO DEPOSIT  AMOUNT");
         System.out.println("PRESS 3 TO CHECK    BALANCE");
